@@ -1,0 +1,82 @@
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+
+
+export default function GrillosDelivery() {
+return (
+<div className="font-[Poppins] text-gray-800">
+{/* Navbar */}
+<nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50 flex justify-between items-center px-8 py-4">
+<h1 className="text-3xl font-bold text-red-700">Grillo’s</h1>
+<div className="space-x-6 text-lg font-medium">
+<a href="#restaurante" className="hover:text-red-600 transition">Restaurante</a>
+<a href="#missao" className="hover:text-red-600 transition">Missão</a>
+<a href="#valores" className="hover:text-red-600 transition">Valores</a>
+<a href="#objetivo" className="hover:text-red-600 transition">Objetivo</a>
+<a href="#cardapio" className="hover:text-red-600 transition">Cardápio</a>
+</div>
+<Button className="bg-red-600 text-white px-5 py-2 rounded-full text-lg shadow hover:bg-red-700 transition">
+<a href="https://wa.me/5599999999999" target="_blank">Peça Agora</a>
+</Button>
+</nav>
+
+
+{/* Header / Restaurante Section */}
+<section id="restaurante" className="pt-28 bg-gradient-to-b from-white to-red-100">
+<div className="flex flex-col lg:flex-row items-center justify-between px-12 py-20">
+<div className="lg:w-1/2">
+<h2 className="text-5xl font-bold mb-4 text-red-700">Restaurante</h2>
+<p className="text-xl leading-relaxed">
+Grillo’s é um restaurante especializado em marmitas nutritivas e saborosas,
+ideal para quem tenta manter uma dieta equilibrada sem abrir mão da boa gastronomia.
+</p>
+</div>
+<img src="/images/chef.png" alt="Chef do Grillo’s" className="lg:w-1/2 mt-10 lg:mt-0 rounded-2xl shadow-lg" />
+</div>
+</section>
+
+
+{/* Nossa Missão */}
+<section id="missao" className="relative bg-white py-20 overflow-hidden">
+<div className="absolute top-0 left-0 w-full h-full bg-red-600 clip-path-wave"></div>
+<div className="relative z-10 max-w-5xl mx-auto px-6 text-white text-center">
+<h2 className="text-5xl font-bold mb-6">Nossa Missão</h2>
+<p className="text-xl max-w-3xl mx-auto">
+Oferecer refeições práticas, equilibradas e deliciosas que promovam saúde e bem-estar,
+combinando sabor, qualidade e conveniência.
+</p>
+</div>
+</section>
+
+
+{/* Nossos Valores */}
+<section id="valores" className="bg-white py-24 px-10">
+<h2 className="text-5xl font-bold text-center mb-12 text-red-700">Nossos Valores</h2>
+<div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+<div className="bg-red-50 p-6 rounded-2xl shadow">
+<h3 className="text-2xl font-semibold mb-3">Cuidar de quem se alimenta</h3>
+<p>
+Acreditamos que saúde e bem-estar começam pela comida. Por isso, priorizamos ingredientes frescos,
+preparo consciente e equilíbrio em cada refeição.
+</p>
+</div>
+<div className="bg-red-50 p-6 rounded-2xl shadow">
+<h3 className="text-2xl font-semibold mb-3">Cuidar do planeta</h3>
+<p>
+Valorizamos práticas sustentáveis e o respeito ao meio ambiente.
+Reduzimos desperdícios e escolhemos embalagens responsáveis.
+</p>
+</div>
+<div className="bg-red-50 p-6 rounded-2xl shadow">
+<h3 className="text-2xl font-semibold mb-3">Evoluir sempre</h3>
+<p>
+Estamos em constante aprendizado e inovação, buscando novas combinações e sabores
+que surpreendam nossos clientes.
+</p>
+</div>
+</div>
+</section>
+
+
+}
